@@ -1,0 +1,26 @@
+CREATE TABLE Users (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Login VARCHAR(50),
+    Password VARCHAR(255),
+    Role VARCHAR(50)
+);
+CREATE TABLE Product (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Price DECIMAL(10, 2),
+    Quantity INT
+);
+
+INSERT INTO Users (ID, Name, Login, Password, Role) VALUES
+(1, 'Иван', 'ivan', '123', 'Администратор'),
+(2, 'Мария', 'maria', '456', 'Пользователь'),
+(3, 'Алексей', 'alex', '789', 'Модератор');
+
+INSERT INTO Product (ID, Name, Price, Quantity) VALUES
+(1, 'Ноутбук', 85000.00, 10),
+(2, 'Смартфон', 60000.00, 25),
+(3, 'Наушники', 15000.00, 50),
+(4, 'Клавиатура', 4500.00, 35),
+(5, 'Монитор', 30000.00, 15),
+(6, 'Мышь', 2500.00, 40);
